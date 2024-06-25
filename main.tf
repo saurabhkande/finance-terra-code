@@ -17,10 +17,10 @@ module "approval-rule" {
     repository_approval_pools = var.repository_approval_pools
 }
 
-# module "secret-manager" {
-#     source = "./modules/secret-manager"
-#     Secret_name = var.Secret_name
-# }
+module "secret-manager" {
+    source = "./modules/secret-manager"
+    Secret_name = var.Secret_name
+}
 
 # module "redshift" {
 #   source = "./modules/redshift"
